@@ -11,9 +11,9 @@ Acquire::HTTPS::Proxy "false";
 ```
 
 # Docker-compose
-
+```
 RUN echo 'Acquire::HTTP::Proxy "http://172.17.0.1:3142";' >> /etc/apt/apt.conf.d/01proxy \
  && echo 'Acquire::HTTPS::Proxy "false";' >> /etc/apt/apt.conf.d/01proxy
-
+```
 # Reference
-(docker hub/apt-cacher-ng)[https://hub.docker.com/r/sameersbn/apt-cacher-ng]
+[docker hub/apt-cacher-ng](https://hub.docker.com/r/sameersbn/apt-cacher-ng)
