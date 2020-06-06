@@ -9,8 +9,3 @@ services:
     - ./cache:/var/cache/apt-cacher-ng:rw
     - ./log:/var/log/apt-cacher-ng/:rw
     restart: always
-    networks: 
-        - apt_cacher_network
-networks: 
-  apt_cacher_network:
-    external: true

@@ -6,13 +6,13 @@
 3. run script by `bash run.sh`
 4. write configuration to `/etc/apt/apt.conf.d/01proxy`
 ```
-Acquire::HTTP::Proxy "http://172.17.0.1:3142";
+Acquire::HTTP::Proxy "http://localhost:3142";
 Acquire::HTTPS::Proxy "false";
 ```
 
 # Docker-compose
 ```
-RUN echo 'Acquire::HTTP::Proxy "http://172.17.0.1:3142";' >> /etc/apt/apt.conf.d/01proxy \
+RUN echo 'Acquire::HTTP::Proxy "http://localhost:3142";' >> /etc/apt/apt.conf.d/01proxy \
  && echo 'Acquire::HTTPS::Proxy "false";' >> /etc/apt/apt.conf.d/01proxy
 ```
 # Reference
